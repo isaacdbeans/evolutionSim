@@ -35,22 +35,6 @@ public class Animal extends Circle{
         return hunger;
     }
 
-    public double getVelocityX() {
-        return velocityX;
-    }
-
-    public double getVelocityY() {
-        return velocityY;
-    }
-
-    public void setVelocityX(double velocityX) {
-        this.velocityX = velocityX;
-    }
-
-    public void setVelocityY(double velocityY) {
-        this.velocityY = velocityY;
-    }
-
     public void setHealth(int health) {
         this.health = health;
     }
@@ -59,11 +43,6 @@ public class Animal extends Circle{
         this.hunger = hunger;
     }
 
-    public void move() {
-        this.setPositionX((int) (this.getPositionX() + velocityX));
-        this.setPositionY((int) (this.getPositionY() + velocityY));
-
-    }
 
     public void spreadOut(Animal other) {
         int thisOtherX = this.getPositionX() - other.getPositionX();

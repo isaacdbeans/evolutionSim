@@ -3,7 +3,7 @@ import java.awt.*;
 
 public class EvolutionSim {
     public static void main(String[] args) {
-        JFrame frame = new JFrame("Moving Shapes Example");
+        JFrame frame = new JFrame("");
 
         NatureFrame panel = new NatureFrame();
         frame.add(panel);
